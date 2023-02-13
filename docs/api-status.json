@@ -321,6 +321,24 @@
         "expected_stable_version": "v0.22.0"
       },
       {
+        "name": "MountInfo.MakeSnap",
+        "comment": "MakeSnap create a snapshot.\n",
+        "added_in_version": "$NEXT_RELEASE",
+        "expected_stable_version": "$NEXT_RELEASE_STABLE"
+      },
+      {
+        "name": "MountInfo.RemoveSnap",
+        "comment": "RemoveSnap remove a snapshot.\n",
+        "added_in_version": "$NEXT_RELEASE",
+        "expected_stable_version": "$NEXT_RELEASE_STABLE"
+      },
+      {
+        "name": "MountInfo.GetSnapInfo",
+        "comment": "GetSnapInfo Fetch snapshot info.\n",
+        "added_in_version": "$NEXT_RELEASE",
+        "expected_stable_version": "$NEXT_RELEASE_STABLE"
+      },
+      {
         "name": "MountInfo.MakeDirs",
         "comment": "MakeDirs creates multiple directories at once.\n\nImplements:\n\n\tint ceph_mkdirs(struct ceph_mount_info *cmount, const char *path, mode_t mode);\n",
         "added_in_version": "$NEXT_RELEASE",

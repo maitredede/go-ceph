@@ -9,6 +9,9 @@
 Name | Added in Version | Expected Stable Version | 
 ---- | ---------------- | ----------------------- | 
 MountInfo.SelectFilesystem | v0.20.0 | v0.22.0 | 
+MountInfo.MakeSnap | $NEXT_RELEASE | $NEXT_RELEASE_STABLE | 
+MountInfo.RemoveSnap | $NEXT_RELEASE | $NEXT_RELEASE_STABLE | 
+MountInfo.GetSnapInfo | $NEXT_RELEASE | $NEXT_RELEASE_STABLE | 
 MountInfo.MakeDirs | $NEXT_RELEASE | $NEXT_RELEASE_STABLE | 
 
 ## Package: cephfs/admin
