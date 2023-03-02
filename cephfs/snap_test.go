@@ -4,8 +4,10 @@
 package cephfs
 
 import (
+	"fmt"
 	"testing"
 
+	cephlog "github.com/ceph/go-ceph/common/log"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -27,6 +29,16 @@ func TestCreateRemoveSnap(t *testing.T) {
 }
 
 func TestCreateRemoveSnapWithMeta(t *testing.T) {
+
+	cephlog.SetDebugf(func(format string, v ...interface{}) {
+		t.Logf(format, v...)
+		fmt.Printf(format+"\n", v...)
+	})
+	cephlog.SetWarnf(func(format string, v ...interface{}) {
+		t.Logf(format, v...)
+		fmt.Printf(format+"\n", v...)
+	})
+
 	mount := fsConnect(t)
 	defer fsDisconnect(t, mount)
 
